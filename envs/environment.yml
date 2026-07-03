@@ -1,0 +1,5 @@
+ Python (>= 3.7)
+MetaPhlAn (version >= 3.0)
+Bowtie2 (version >= 2.2)
+DIAMOND (=0.9.36)
+MinPath
