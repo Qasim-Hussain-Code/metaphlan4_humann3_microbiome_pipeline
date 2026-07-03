@@ -7,7 +7,7 @@
 #   - MetaPhlAn >= 3.0  (from bioconda)
 #   - Bowtie2 >= 2.2    (from bioconda)
 #   - DIAMOND 0.9.36    (from bioconda)
-#   - MinPath            (from bioconda)
+#   - MinPath            (bundled with HUMAnN 3)
 #   - HUMAnN 3           (from bioconda)
 # ==============================================================================
 
@@ -30,8 +30,9 @@ conda create -n "${ENV_NAME}" -y \
     "metaphlan>=3.0" \
     "bowtie2>=2.2" \
     "diamond=0.9.36" \
-    "minpath" \
     "humann"
+
+# Note: MinPath is bundled inside HUMAnN 3 — no separate install needed.
 
 # ── 4. Verify installation ──────────────────────────────────────────────────
 echo ""
