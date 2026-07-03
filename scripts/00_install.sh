@@ -27,6 +27,7 @@ echo ""
 # CONDA_NO_PLUGINS works around a duplicate signature-verification plugin bug
 # in conda 26.1.1. Safe to remove after updating conda (conda update -n base -c conda-forge conda).
 CONDA_NO_PLUGINS=true conda create -n "${ENV_NAME}" -y \
+    --solver=classic \
     -c bioconda -c conda-forge \
     "python>=3.7" \
     "metaphlan>=3.0" \
