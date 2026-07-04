@@ -1,7 +1,105 @@
-07/05/2026 12:00:53 AM - humann.humann - INFO: Running humann v3.9
-07/05/2026 12:00:53 AM - humann.humann - INFO: Output files will be written to: /home/qasim/metaphlan4_humann3_microbiome_pipeline/results
-07/05/2026 12:00:53 AM - humann.humann - INFO: Writing temp files to directory: /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp
-07/05/2026 12:00:53 AM - humann.utilities - INFO: File ( /home/qasim/metaphlan4_humann3_microbiome_pipeline/data/raw_reads/demo.fastq.gz ) is of format:  fastq.gz
-07/05/2026 12:00:53 AM - humann.utilities - INFO: Decompressing gzipped file ...
-07/05/2026 12:00:53 AM - humann.utilities - DEBUG: Check software, metaphlan, for required version, 3.0
-07/05/2026 12:00:53 AM - humann.utilities - CRITICAL: Can not call software version for metaphlan
+07/05/2026 12:18:45 AM - humann.humann - INFO: Running humann v3.9
+07/05/2026 12:18:45 AM - humann.humann - INFO: Output files will be written to: /home/qasim/metaphlan4_humann3_microbiome_pipeline/results
+07/05/2026 12:18:45 AM - humann.humann - INFO: Writing temp files to directory: /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp
+07/05/2026 12:18:45 AM - humann.utilities - INFO: File ( /home/qasim/metaphlan4_humann3_microbiome_pipeline/data/raw_reads/demo.m8 ) is of format:  blastm8
+07/05/2026 12:18:45 AM - humann.config - INFO: 
+Run config settings: 
+
+DATABASE SETTINGS
+nucleotide database folder = /home/qasim/metaphlan4_humann3_microbiome_pipeline/scripts/humann_dbs/chocophlan
+protein database folder = /home/qasim/metaphlan4_humann3_microbiome_pipeline/scripts/humann_dbs/uniref
+pathways database file 1 = /home/qasim/miniconda3/envs/humann_3/lib/python3.10/site-packages/humann/data/pathways/metacyc_reactions_level4ec_only.uniref.bz2
+pathways database file 2 = /home/qasim/miniconda3/envs/humann_3/lib/python3.10/site-packages/humann/data/pathways/metacyc_pathways_structured_filtered_v24_subreactions
+utility mapping database folder = /home/qasim/miniconda3/envs/humann_3/lib/python3.10/site-packages/humann/data/misc
+
+RUN MODES
+resume = False
+verbose = False
+bypass prescreen = True
+bypass nucleotide index = True
+bypass nucleotide search = True
+bypass translated search = True
+translated search = diamond
+threads = 1
+
+SEARCH MODE
+search mode = uniref90
+nucleotide identity threshold = 0.0
+translated identity threshold = 80.0
+
+ALIGNMENT SETTINGS
+bowtie2 options = --very-sensitive
+diamond options = --top 1 --outfmt 6
+evalue threshold = 1.0
+prescreen threshold = 0.01
+translated subject coverage threshold = 50.0
+translated query coverage threshold = 90.0
+nucleotide subject coverage threshold = 50.0
+nucleotide query coverage threshold = 90.0
+
+PATHWAYS SETTINGS
+minpath = on
+xipe = off
+gap fill = on
+
+INPUT AND OUTPUT FORMATS
+input file format = blastm8
+output file format = tsv
+output max decimals = 10
+remove stratified output = False
+remove column description output = False
+log level = DEBUG
+
+07/05/2026 12:18:45 AM - humann.store - DEBUG: Initialize Alignments class instance to minimize memory use
+07/05/2026 12:18:45 AM - humann.store - DEBUG: Initialize Reads class instance to minimize memory use
+07/05/2026 12:18:58 AM - humann.humann - INFO: Load pathways database part 1: /home/qasim/miniconda3/envs/humann_3/lib/python3.10/site-packages/humann/data/pathways/metacyc_reactions_level4ec_only.uniref.bz2
+07/05/2026 12:18:58 AM - humann.humann - INFO: Load pathways database part 2: /home/qasim/miniconda3/envs/humann_3/lib/python3.10/site-packages/humann/data/pathways/metacyc_pathways_structured_filtered_v24_subreactions
+07/05/2026 12:18:58 AM - humann.humann - INFO: Process the blastm8 mapping results ...
+07/05/2026 12:18:58 AM - humann.utilities - DEBUG: Total alignments where percent identity is not a number: 0
+07/05/2026 12:18:58 AM - humann.utilities - DEBUG: Total alignments where alignment length is not a number: 0
+07/05/2026 12:18:58 AM - humann.utilities - DEBUG: Total alignments where E-value is not a number: 0
+07/05/2026 12:18:58 AM - humann.utilities - DEBUG: Total alignments not included based on large e-value: 0
+07/05/2026 12:18:58 AM - humann.utilities - DEBUG: Total alignments not included based on small percent identity: 19
+07/05/2026 12:18:58 AM - humann.utilities - DEBUG: Total alignments not included based on small query coverage: 12
+07/05/2026 12:18:58 AM - humann.search.blastx_coverage - INFO: Total alignments without coverage information: 0
+07/05/2026 12:18:58 AM - humann.search.blastx_coverage - INFO: Total proteins in blastx output: 43
+07/05/2026 12:18:58 AM - humann.search.blastx_coverage - INFO: Total proteins without lengths: 0
+07/05/2026 12:18:58 AM - humann.search.blastx_coverage - INFO: Proteins with coverage greater than threshold (50.0): 43
+07/05/2026 12:18:58 AM - humann.utilities - DEBUG: Total alignments where percent identity is not a number: 0
+07/05/2026 12:18:58 AM - humann.utilities - DEBUG: Total alignments where alignment length is not a number: 0
+07/05/2026 12:18:58 AM - humann.utilities - DEBUG: Total alignments where E-value is not a number: 0
+07/05/2026 12:18:58 AM - humann.utilities - DEBUG: Total alignments not included based on large e-value: 0
+07/05/2026 12:18:58 AM - humann.utilities - DEBUG: Total alignments not included based on small percent identity: 19
+07/05/2026 12:18:58 AM - humann.utilities - DEBUG: Total alignments not included based on small query coverage: 12
+07/05/2026 12:18:58 AM - humann.search.translated - DEBUG: Total translated alignments not included based on small subject coverage value: 0
+07/05/2026 12:18:58 AM - humann.humann - INFO: TIMESTAMP: Completed 	alignment post-processing 	:	 0	 seconds
+07/05/2026 12:18:58 AM - humann.humann - INFO: Computing gene families ...
+07/05/2026 12:18:58 AM - humann.quantify.families - DEBUG: Compute gene families
+07/05/2026 12:18:58 AM - humann.store - INFO: 
+Total gene families  : 43
+unclassified : 43 gene families
+07/05/2026 12:19:07 AM - humann.humann - INFO: TIMESTAMP: Completed 	computing gene families 	:	 8	 seconds
+07/05/2026 12:19:07 AM - humann.humann - INFO: Computing pathways abundance and coverage ...
+07/05/2026 12:19:07 AM - humann.quantify.modules - DEBUG: Write flat reactions to pathways file for Minpath
+07/05/2026 12:19:07 AM - humann.quantify.modules - INFO: Compute reaction scores for bug: unclassified
+07/05/2026 12:19:07 AM - humann.quantify.modules - INFO: Run MinPath on unclassified
+07/05/2026 12:19:07 AM - humann.quantify.modules - INFO: Compute reaction scores for bug: all
+07/05/2026 12:19:08 AM - humann.quantify.modules - INFO: Run MinPath on all
+07/05/2026 12:19:08 AM - humann.utilities - DEBUG: Using python module : /home/qasim/miniconda3/envs/humann_3/lib/python3.10/site-packages/humann/quantify/MinPath12hmp.py
+07/05/2026 12:19:08 AM - humann.utilities - INFO: Execute command: /home/qasim/miniconda3/envs/humann_3/bin/python3.10 /home/qasim/miniconda3/envs/humann_3/lib/python3.10/site-packages/humann/quantify/MinPath12hmp.py -any /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp/tmpyj9kr8sv/tmpk38xvd72 -map /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp/tmpyj9kr8sv/tmp8krr04f1 -report /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp/tmpyj9kr8sv/tmpjcprcqkt -details /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp/tmpyj9kr8sv/tmppfsn5n2g -mps /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp/tmpyj9kr8sv/tmpdyzdu5jh
+07/05/2026 12:19:08 AM - humann.utilities - DEBUG: Using python module : /home/qasim/miniconda3/envs/humann_3/lib/python3.10/site-packages/humann/quantify/MinPath12hmp.py
+07/05/2026 12:19:08 AM - humann.utilities - INFO: Execute command: /home/qasim/miniconda3/envs/humann_3/bin/python3.10 /home/qasim/miniconda3/envs/humann_3/lib/python3.10/site-packages/humann/quantify/MinPath12hmp.py -any /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp/tmpyj9kr8sv/tmpeukzj382 -map /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp/tmpyj9kr8sv/tmp8krr04f1 -report /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp/tmpyj9kr8sv/tmpuqwz_8t4 -details /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp/tmpyj9kr8sv/tmp03qa22lz -mps /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp/tmpyj9kr8sv/tmpi09amt2i
+07/05/2026 12:19:09 AM - humann.quantify.modules - DEBUG: Compute pathway abundance for bug: unclassified
+07/05/2026 12:19:09 AM - humann.quantify.modules - DEBUG: Compute pathway abundance for bug: all
+07/05/2026 12:19:09 AM - humann.quantify.modules - DEBUG: Compute pathway coverage for bug: unclassified
+07/05/2026 12:19:09 AM - humann.quantify.modules - DEBUG: Compute pathway coverage for bug: all
+07/05/2026 12:19:09 AM - humann.quantify.modules - DEBUG: Print pathways _Abundance
+07/05/2026 12:19:09 AM - humann.quantify.modules - DEBUG: Print pathways _Coverage
+07/05/2026 12:19:09 AM - humann.humann - INFO: TIMESTAMP: Completed 	computing pathways 	:	 2	 seconds
+07/05/2026 12:19:09 AM - humann.humann - INFO: 
+Output files created: 
+/home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_genefamilies.tsv
+/home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_pathabundance.tsv
+/home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_pathcoverage.tsv
+
+07/05/2026 12:19:09 AM - humann.utilities - DEBUG: Remove directory: /home/qasim/metaphlan4_humann3_microbiome_pipeline/results/demo_humann_temp/tmpyj9kr8sv
