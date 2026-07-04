@@ -1,5 +1,13 @@
- Python (>= 3.7)
-MetaPhlAn (version >= 3.0)
-Bowtie2 (version >= 2.2)
-DIAMOND (=0.9.36)
-MinPath
+name: humann_3
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10.*
+  - metaphlan=4.2.4
+  - bowtie2>=2.5
+  - diamond=2.1.*
+  - pip
+  - pip:
+      - humann==3.9
