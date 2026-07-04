@@ -1,0 +1,14 @@
+# ── Large data / databases (not for version control) ─────────────
+scripts/humann_dbs/
+data/raw_reads/*.fastq.gz
+data/raw_reads/*.sam
+data/raw_reads/*.m8
+
+# ── HUMAnN / MetaPhlAn output ────────────────────────────────────
+results/*.tsv
+results/**/*.tsv
+
+# ── Python / conda ───────────────────────────────────────────────
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
