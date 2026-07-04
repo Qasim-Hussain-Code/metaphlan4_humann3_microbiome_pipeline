@@ -1,6 +1,5 @@
-# Taxonomic and Functional Profiling Pipeline: MetaPhlAn 4 and HUMAnN 3
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](license)
+# Taxonomic and Functional Profiling Pipeline: MetaPhlAn 4 and HUMAnN 3
 
 This repository provides a reproducible computational framework designed for the taxonomic profiling and functional metabolic reconstruction of metagenomic shotgun sequencing reads. The pipeline automates the entire bioinformatic workflow, including environment provisioning, sequence alignment, database management, abundance normalization, and cohort-level matrix consolidation.
 
