@@ -92,5 +92,15 @@ These values reflect the metabolic "dark matter" of the microbiome, which is a t
 
 ---
 
+## References
+
+* Blanco-Miguez, A., Beghini, F., Cumbo, F., McIver, L. J., Thompson, K. N., Zolfo, M., Asnicar, F., Huttenhower, C., and Segata, N. (2023). Extending and improving metagenomic taxonomic profiling with MetaPhlAn 4. Nature Biotechnology, 41(11), 1633-1644. https://doi.org/10.1038/s41587-023-01688-w
+* Beghini, F., McIver, L. J., Blanco-Miguez, A., Dubois, L., Asnicar, F., Maharjan, N., Mailyan, A., Manghi, P., Scholz, M., Thomas, A. M., Sandri, M., Segata, N., and Huttenhower, C. (2021). Integrating taxonomic, functional, and strain-level profiling of diverse microbial communities with bioBakery 3. eLife, 10, e65088. https://doi.org/10.7554/eLife.65088
+* Langmead, B., and Salzberg, S. L. (2012). Fast gapped-read alignment with Bowtie 2. Nature Methods, 9(4), 357-359. https://doi.org/10.1038/nmeth.1923
+* Buchfink, B., Reuter, K., and Drost, H. G. (2021). Sensitive protein-protein database searching with DIAMOND. Nature Methods, 18(4), 366-368. https://doi.org/10.1038/s41592-021-01101-y
+* Ye, Y., and Doak, T. G. (2009). A parsimony approach to biological pathway reconstruction/inference for genomes and metagenomes. PLoS Computational Biology, 5(8), e1000465. https://doi.org/10.1371/journal.pcbi.1000465
+
+---
+
 ## License
 This pipeline is released under the [MIT License](license).
