@@ -43,8 +43,17 @@ echo "  Verifying installed tools"
 echo "============================================="
 
 # Activate environment in a subshell-safe way
+# Note: temporarily disable 'nounset' (-u) because the binutils_linux-64
+# activation script references ADDR2LINE without initialising it first.
 eval "$(conda shell.bash hook)"
+set +u
 conda activate "${ENV_NAME}"
+set -u
+
+# ── 3. Install HUMAnN via pip (conda package may target a different Python) ──
+echo ""
+echo "Installing HUMAnN via pip (ensures correct Python version)..."
+pip install humann --quiet
 
 echo ""
 echo "Python:    $(python --version 2>&1)"
