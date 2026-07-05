@@ -12,7 +12,7 @@ RESULTS_DIR="${PROJ_DIR}/results"
 
 # ── Activate conda environment ───────────────────────────────────────────────
 eval "$(conda shell.bash hook)"
-set +u                       # work around binutils activation bug (ADDR2LINE)
+set +u                       
 conda activate humann_3
 set -u
 
