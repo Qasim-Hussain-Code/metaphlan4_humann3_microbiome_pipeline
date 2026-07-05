@@ -43,8 +43,6 @@ echo "  Verifying installed tools"
 echo "============================================="
 
 # Activate environment in a subshell-safe way
-# Note: temporarily disable 'nounset' (-u) because the binutils_linux-64
-# activation script references ADDR2LINE without initialising it first.
 eval "$(conda shell.bash hook)"
 set +u
 conda activate "${ENV_NAME}"
